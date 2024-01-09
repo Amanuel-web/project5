@@ -1,0 +1,462 @@
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: visible;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+#scrollUp {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 700px;
+    width: 100vw;
+  }
+
+  .links .nav_links .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav_menu {
+    position: absolute;
+    left: -200%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100;
+  }
+
+  .nav_menu li a {
+    color: whitesmoke;
+  }
+
+  .nav_items {
+    margin: 16px 0;
+  }
+
+  .nav_menu.active {
+    left: 0;
+    background-color: #677788;
+    height: 100vh;
+  }
+
+  .empowering_logo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 700px;
+    row-gap: 100px;
+  }
+
+  .empowering {
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo_icons {
+    margin-left: 600px;
+  }
+
+  .benefit_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    margin: auto;
+  }
+
+  .front_makes_banner1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0px;
+  }
+
+  .front_makes {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner_btn {
+    margin: auto;
+  }
+
+  .software_banner {
+    margin: 0%;
+  }
+
+  .dots {
+    display: grid;
+    justify-content: space-evenly;
+  }
+
+  .connector hr {
+    width: 100px;
+  }
+
+  .dot-basic p {
+    font-size: 13px;
+  }
+
+  .dots_elemetnt {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .banner_2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url(essentials/banners/banner_two.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
+
+  .image_woman_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .trusted_txt_logo {
+    margin-bottom: 100px;
+  }
+
+  .trusted_logos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .trusted_logos img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .price_details {
+    display: grid;
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card_price {
+    text-align: center;
+  }
+
+  .pricing_img {
+    padding: 30px;
+    gap: 100px;
+  }
+
+  .hire_us_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+  }
+
+  .i_love_front {
+    font-size: 18px;
+  }
+
+  .footer1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+  }
+
+  .documentation {
+    grid-column: 1 /3;
+  }
+
+  .logo_address ul li a,
+  .company ul li a,
+  .features ul li a,
+  .documentation ul li a,
+  .resources ul li a {
+    font-size: 15px;
+  }
+
+  .footer1 a {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    max-width: 330px;
+    font-size: 13px;
+  }
+
+  .links .nav_links .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav_menu {
+    position: absolute;
+    left: -200%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100;
+  }
+
+  .nav_menu li a {
+    color: whitesmoke;
+  }
+
+  .nav_items {
+    margin: 16px 0;
+  }
+
+  .nav_menu.active {
+    left: 0;
+    background-color: #677788;
+    height: 100vh;
+  }
+
+  .empowering_logo {
+    margin-bottom: 450px;
+  }
+
+  .empowering h2 {
+    font-size: 35px;
+  }
+
+  .content .btn {
+    padding: 0%;
+  }
+
+  .empowering_logo .content .learn_btn {
+    font-size: 14px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    box-shadow: 1px 5px 7px 1px rgba(60, 60, 60, 0.8);
+  }
+
+  .icons img {
+    width: 40px;
+    height: 40px;
+    padding: 18px;
+  }
+
+  .google_icon {
+    position: absolute;
+    right: 380px;
+    top: 20px;
+  }
+
+  .atlassian_icon {
+    position: absolute;
+    right: 280px;
+    top: 40px;
+  }
+
+  .asana_icon {
+    position: absolute;
+    right: 150px;
+    top: 20px;
+  }
+
+  .paypal_icon {
+    position: absolute;
+    right: 380px;
+    top: 130px;
+  }
+
+  .weave_icon {
+    position: absolute;
+    right: 210px;
+    top: 150px;
+  }
+
+  .google_a_icon {
+    position: absolute;
+    right: 300px;
+    top: 250px;
+  }
+
+  .calander_icon {
+    position: absolute;
+    right: 150px;
+    top: 300px;
+  }
+
+  .benefit_cards {
+    display: grid;
+    grid-template-columns: none;
+  }
+
+  .front_makes_banner1 {
+    display: flex;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    gap: 0;
+    height: 500px;
+    margin-bottom: 50px;
+  }
+
+  .front_makes {
+    margin-bottom: 60px;
+    padding: 0%;
+  }
+
+  .software_banner {
+    width: 350px;
+    margin: 0%;
+    padding: 0%;
+  }
+  .software_banner img {
+    height: initial;
+  }
+
+  .dots {
+    display: grid;
+    grid-template-columns: none;
+    row-gap: 20px;
+  }
+
+  .connector {
+    display: none;
+  }
+
+  .dots_woman img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .dots_woman {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hire_us_form {
+    display: grid;
+  }
+
+  .image_dots {
+    position: absolute;
+    left: -60px;
+    bottom: -40px;
+    z-index: -1;
+  }
+
+  .hubspot-text {
+    max-width: 300px;
+    font-size: 20px;
+  }
+
+  .form-container {
+    display: grid;
+    margin: 15px;
+    padding: 20px;
+  }
+  .form-container input,
+  .form-container select {
+    display: grid;
+    font-size: 13px;
+  }
+
+  .trusted_logos {
+    display: grid;
+  }
+
+  .pricing_img {
+    display: grid;
+    grid-template-columns: none;
+  }
+
+  .hire_us_container {
+    display: grid;
+    grid-template-columns: none;
+  }
+
+  .footer1 {
+    display: grid;
+    grid-template-columns: none;
+    text-align: center;
+  }
+
+  .documentation {
+    grid-column: initial;
+  }
+
+  .top_socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top_social_country {
+    display: grid;
+    text-align: center;
+  }
+
+  .footer3_top {
+    display: grid;
+    row-gap: 50px;
+  }
+
+  #scrollUp {
+    display: none;
+  }
+}
